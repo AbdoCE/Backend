@@ -1,0 +1,5 @@
+{
+    "01aca":"Lỗi này xảy ra khi thêm danh mục mới tại catalogs.Controller hàm addCatalogs",
+    "01eca":"Lỗi này xảy ra khi sửa danh mục mới tại catalogs.Controller hàm editCatalogs",
+    "01maca": "Lỗi chương trình thêm danh mục trong Model"
+}

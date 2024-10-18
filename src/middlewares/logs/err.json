@@ -1,0 +1,72 @@
+[
+  {
+    "time": "Tue Sep 12 2023 14:55:53 GMT+0700 (Indochina Time)",
+    "errcode": "02amaa",
+    "content": "{\"error\":true,\"data\":{\"code\":\"ER_BAD_FIELD_ERROR\",\"errno\":1054,\"sqlMessage\":\"Unknown column 'man_key' in 'where clause'\",\"sqlState\":\"42S22\",\"index\":0,\"sql\":\"SELECT * FROM `wh_manufactors` WHERE `man_key` = 'OEM'\"}}"
+  },
+  {
+    "time": "Tue Sep 12 2023 14:56:18 GMT+0700 (Indochina Time)",
+    "errcode": "02amaa",
+    "content": "{\"error\":true,\"data\":{\"code\":\"ER_BAD_FIELD_ERROR\",\"errno\":1054,\"sqlMessage\":\"Unknown column 'man_enable' in 'field list'\",\"sqlState\":\"42S22\",\"index\":0,\"sql\":\"INSERT INTO `wh_manufactors`(`man_name`, `man_detail`, `man_key`, `man_uuid`, `man_enable`) VALUES ('OEM', 'OEM', 'OEM', '652b76e0-15ce-483b-a5f0-adaafb8ca7e5', '1')\"}}"
+  },
+  {
+    "time": "Tue Sep 12 2023 14:56:35 GMT+0700 (Indochina Time)",
+    "errcode": "02amaa",
+    "content": "{}"
+  },
+  {
+    "time": "Tue Sep 12 2023 14:58:16 GMT+0700 (Indochina Time)",
+    "errcode": "02amaa",
+    "content": "{}"
+  },
+  {
+    "time": "Tue Sep 12 2023 14:59:18 GMT+0700 (Indochina Time)",
+    "errcode": "02amaa",
+    "content": "{}"
+  },
+  {
+    "time": "Tue Sep 12 2023 15:00:02 GMT+0700 (Indochina Time)",
+    "errcode": "02amaa",
+    "content": "{}"
+  },
+  {
+    "time": "Tue Sep 12 2023 15:03:12 GMT+0700 (Indochina Time)",
+    "errcode": "01eca",
+    "content": "{}"
+  },
+  {
+    "time": "Tue Sep 12 2023 15:04:09 GMT+0700 (Indochina Time)",
+    "errcode": "01eca",
+    "content": "{}"
+  },
+  {
+    "time": "Tue Sep 12 2023 15:52:06 GMT+0700 (Indochina Time)",
+    "errcode": "04ait",
+    "content": {
+      "error": true,
+      "data": {
+        "code": "ER_FIELD_SPECIFIED_TWICE",
+        "errno": 1110,
+        "sqlMessage": "Column 'whs_uuid' specified twice",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "INSERT INTO `wh_items`(`item_uuid`, `item_key`, `item_name`, `item_namesub`, `item_part`, `item_detail`, `cat_uuid`, `item_price`, `item_note`, `item_image`, `item_status`, `item_serial`, `item_amount`, `whs_uuid`, `whs_uuid`) VALUES ('47531654-7ef2-4319-af89-bbf25411961e', 'DM04DM', 'Sản phẩm tét', 'tên trên hoá đơnd', 'PARTM6', 'thông tin sản phẩm', '9652af7b-862d-4a06-ac8a-ecd034b532bf', '10000', 'không có ghi chú', ' ảnh sp', 'DEMO', 'DEMO', '-1','NULLWHS','4e4dd653-c6e8-4fca-b430-63d436ead8b7')"
+      }
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 16:09:28 GMT+0700 (Indochina Time)",
+    "errcode": "01eia",
+    "content": "{}"
+  },
+  {
+    "time": "Tue Sep 12 2023 16:09:46 GMT+0700 (Indochina Time)",
+    "errcode": "01eia",
+    "content": "{}"
+  },
+  {
+    "time": "Tue Sep 12 2023 16:10:21 GMT+0700 (Indochina Time)",
+    "errcode": "01eia",
+    "content": "{}"
+  }
+]

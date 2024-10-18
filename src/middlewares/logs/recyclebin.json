@@ -1,0 +1,15 @@
+[
+  {
+    "time": "Tue Sep 12 2023 15:05:09 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "delman",
+    "info": {
+      "id": 1,
+      "man_name": "OEM",
+      "man_detail": "OEM",
+      "man_uuid": "410de222-8e18-4792-a897-193ef9630dff",
+      "man_key": "OEM",
+      "man_enable": "1"
+    }
+  }
+]

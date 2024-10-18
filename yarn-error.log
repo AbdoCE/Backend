@@ -1,0 +1,67 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add express nodemailer google-auth-library
+
+PATH: 
+  C:\Program Files (x86)\Common Files\iDatum\Runtime\Win32_i86;C:\Program Files (x86)\Common Files\iDatum\Runtime\Win64_x64;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\LLVM\bin;C:\Program Files\CMake\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\JAI\SDK\bin;C:\Program Files\JAI\SDK\bin\Win32_i86;C:\Program Files\JAI\SDK\GenICam\bin\Win64_x64;C:\Program Files\JAI\SDK\GenICam\bin\Win32_i86;C:\Program Files\dotnet\;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\MVDAlgorithmSDK\Runtime\Win32;C:\Program Files (x86)\MVDAlgorithmSDK\Runtime\x64;C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python311\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\.dotnet\tools;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.4.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, rmdir 'C:\Users\Administrator\Desktop\Backend\node_modules\.bin'
+
+npm manifest: 
+  {
+    "name": "Faha-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/app.js",
+    "scripts": {
+      "start": "cross-env NODE_ENV=production node src/app.js",
+      "dev": "cross-env NODE_ENV=development nodemon src/app.js",
+      "test": "cross-env NODE_ENV=test jest --verbose --silent",
+      "test:watch": "npm run test -- --watch",
+      "prisma": "npx prisma migrate dev --name init"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@microsoft/microsoft-graph-types": "^2.35.0",
+      "nodemon": "^2.0.22",
+      "prisma": "^4.7.1"
+    },
+    "dependencies": {
+      "@microsoft/microsoft-graph-client": "^3.0.5",
+      "@prisma/client": "^4.7.1",
+      "bcrypt": "^5.1.0",
+      "body-parser": "^1.20.2",
+      "cors": "^2.8.5",
+      "cross-env": "^7.0.3",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "firebase": "^10.1.0",
+      "firebaseui": "^6.1.0",
+      "jest": "^29.3.1",
+      "jsonwebtoken": "^9.0.0",
+      "mailtrap": "^3.1.1",
+      "mysql": "^2.18.1",
+      "rand-token": "^1.0.1",
+      "supertest": "^6.3.3",
+      "util": "^0.12.5",
+      "yarn": "^1.22.19",
+      "zod": "^3.19.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

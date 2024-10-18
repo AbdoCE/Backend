@@ -1,0 +1,307 @@
+[
+  {
+    "time": "Tue Sep 12 2023 10:34:48 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "addItem",
+    "info": {
+      "id": 1,
+      "item_uuid": "1b667286-5422-4f74-824a-ec4851b94cbe",
+      "item_key": "DM03",
+      "item_name": "Sản phẩm tét",
+      "item_namesub": "tên trên hoá đơn",
+      "item_part": "PARTM4",
+      "item_serial": "DEMO",
+      "item_detail": "thông tin sản phẩm",
+      "cat_uuid": "xxxxx",
+      "item_amount": "-1",
+      "item_price": "10000",
+      "item_note": "không có ghi chú",
+      "item_status": "DEMO",
+      "item_image": " ảnh sp"
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 10:35:48 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "addItem",
+    "info": {
+      "id": 2,
+      "item_uuid": "86b7dbf9-a311-4d4f-bd71-efd81c530a97",
+      "item_key": "DM04",
+      "item_name": "Sản phẩm tétd",
+      "item_namesub": "tên trên hoá đơnd",
+      "item_part": "PARTM4d",
+      "item_serial": "DEMO",
+      "item_detail": "thông tin sản phẩm",
+      "cat_uuid": "xxxxx",
+      "item_amount": "-1",
+      "item_price": "10000",
+      "item_note": "không có ghi chú",
+      "item_status": "DEMO",
+      "item_image": " ảnh sp"
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 10:37:29 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "updateItem",
+    "info": {
+      "oldItem": {
+        "id": 1,
+        "item_uuid": "1b667286-5422-4f74-824a-ec4851b94cbe",
+        "item_key": "DM03",
+        "item_name": "Sản phẩm tét",
+        "item_namesub": "tên trên hoá đơn",
+        "item_part": "PARTM4",
+        "item_serial": "DEMO",
+        "item_detail": "thông tin sản phẩm",
+        "cat_uuid": "xxxxx",
+        "item_amount": "-1",
+        "item_price": "10000",
+        "item_note": "không có ghi chú",
+        "item_status": "DEMO",
+        "item_image": " ảnh sp"
+      },
+      "updateItem": {
+        "item_name": "Sản phẩm téts"
+      }
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 10:39:44 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "updateItem",
+    "info": {
+      "oldItem": {
+        "id": 1,
+        "item_uuid": "1b667286-5422-4f74-824a-ec4851b94cbe",
+        "item_key": "DM03",
+        "item_name": "Sản phẩm téts",
+        "item_namesub": "tên trên hoá đơn",
+        "item_part": "PARTM4",
+        "item_serial": "DEMO",
+        "item_detail": "thông tin sản phẩm",
+        "cat_uuid": "xxxxx",
+        "item_amount": "-1",
+        "item_price": "10000",
+        "item_note": "không có ghi chú",
+        "item_status": "DEMO",
+        "item_image": " ảnh sp"
+      },
+      "updateItem": {
+        "item_name": "Sản phẩm tét"
+      }
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 14:42:19 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "addItem",
+    "info": {
+      "id": 3,
+      "item_uuid": "2ca9d707-6054-428f-bd2a-4ae47cf5f555",
+      "item_key": "DM05DM",
+      "item_name": "Sản phẩm tétd",
+      "item_namesub": "tên trên hoá đơnd",
+      "item_part": "PARTM5",
+      "item_serial": "DEMO",
+      "item_detail": "thông tin sản phẩm",
+      "cat_uuid": "f4339e4e-774c-444a-97a2-f10da3db478f",
+      "whs_uuid": "NULLWHS",
+      "item_amount": "-1",
+      "item_price": "10000",
+      "item_note": "không có ghi chú",
+      "item_status": "DEMO",
+      "item_image": " ảnh sp",
+      "item_createdate": "",
+      "item_changedate": "",
+      "item_manufacturer": ""
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 15:04:59 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "updateMan",
+    "info": {
+      "oldMan": {
+        "id": 1,
+        "man_name": "OMRON",
+        "man_detail": "OMRON",
+        "man_uuid": "410de222-8e18-4792-a897-193ef9630dff",
+        "man_key": "OMRON",
+        "man_enable": "1"
+      },
+      "updateMan": {
+        "man_name": "OEM",
+        "man_detail": "OEM",
+        "man_key": "OEM"
+      }
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 15:10:26 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "addItem",
+    "info": {
+      "id": 4,
+      "item_uuid": "9863fd24-13e1-4923-892f-9c09a37851d2",
+      "item_key": "DM06DM",
+      "item_name": "Sản phẩm tétd",
+      "item_namesub": "tên trên hoá đơnd",
+      "item_part": "PARTM6",
+      "item_serial": "DEMO",
+      "item_detail": "thông tin sản phẩm",
+      "cat_uuid": "f4339e4e-774c-444a-97a2-f10da3db478f",
+      "whs_uuid": "NULLWHS",
+      "item_amount": "-1",
+      "item_price": "10000",
+      "item_note": "không có ghi chú",
+      "item_status": "DEMO",
+      "item_image": " ảnh sp",
+      "item_createdate": "",
+      "item_changedate": "",
+      "man_uuid": ""
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 15:52:29 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "addItem",
+    "info": {
+      "id": 1,
+      "item_uuid": "3cd66d0b-f2a3-48fb-b74c-42f009b85bfc",
+      "item_key": "DM04DM",
+      "item_name": "Sản phẩm tét",
+      "item_namesub": "tên trên hoá đơnd",
+      "item_part": "PARTM6",
+      "item_serial": "DEMO",
+      "item_detail": "thông tin sản phẩm",
+      "cat_uuid": "9652af7b-862d-4a06-ac8a-ecd034b532bf",
+      "whs_uuid": "NULLWHS",
+      "item_amount": "-1",
+      "item_price": "10000",
+      "item_note": "không có ghi chú",
+      "item_status": "DEMO",
+      "item_image": " ảnh sp",
+      "item_createdate": "",
+      "item_changedate": "",
+      "man_uuid": "4e4dd653-c6e8-4fca-b430-63d436ead8b7"
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 16:38:14 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "updateItem",
+    "info": {
+      "oldItem": {
+        "id": 1,
+        "item_uuid": "3cd66d0b-f2a3-48fb-b74c-42f009b85bfc",
+        "item_key": "DM04DM",
+        "item_name": "Sản phẩm tét",
+        "item_namesub": "tên trên hoá đơnd",
+        "item_part": "PARTM6",
+        "item_serial": "DEMO",
+        "item_detail": "thông tin sản phẩm",
+        "cat_uuid": "9652af7b-862d-4a06-ac8a-ecd034b532bf",
+        "whs_uuid": "NULLWHS",
+        "item_amount": "-1",
+        "item_price": "10000",
+        "item_note": "không có ghi chú",
+        "item_status": "DEMO",
+        "item_image": " ảnh sp",
+        "item_createdate": "",
+        "item_changedate": "",
+        "man_uuid": "4e4dd653-c6e8-4fca-b430-63d436ead8b7"
+      },
+      "updateItem": {
+        "item_namesub": "tên trên hoá đơn",
+        "item_part": "PARTM4"
+      }
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 16:38:24 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "updateItem",
+    "info": {
+      "oldItem": {
+        "id": 1,
+        "item_uuid": "3cd66d0b-f2a3-48fb-b74c-42f009b85bfc",
+        "item_key": "DM04DM",
+        "item_name": "Sản phẩm tét",
+        "item_namesub": "tên trên hoá đơn",
+        "item_part": "PARTM4",
+        "item_serial": "DEMO",
+        "item_detail": "thông tin sản phẩm",
+        "cat_uuid": "9652af7b-862d-4a06-ac8a-ecd034b532bf",
+        "whs_uuid": "NULLWHS",
+        "item_amount": "-1",
+        "item_price": "10000",
+        "item_note": "không có ghi chú",
+        "item_status": "DEMO",
+        "item_image": " ảnh sp",
+        "item_createdate": "",
+        "item_changedate": "",
+        "man_uuid": "4e4dd653-c6e8-4fca-b430-63d436ead8b7"
+      },
+      "updateItem": {
+        "item_part": "PARTM"
+      }
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 16:57:45 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "addItem",
+    "info": {
+      "id": 2,
+      "item_uuid": "6b36e132-1f4d-439f-89c3-f90a9f808c5e",
+      "item_key": "DM01DM",
+      "item_name": "Sản phẩm số 2",
+      "item_namesub": "tên trên hoá đơn 2",
+      "item_part": "PARTMM",
+      "item_serial": "DEMO",
+      "item_detail": "thông tin sản phẩmd",
+      "cat_uuid": "9652af7b-862d-4a06-ac8a-ecd034b532bf",
+      "whs_uuid": "NULLWHS",
+      "item_amount": "-1",
+      "item_price": "10000",
+      "item_note": "không có ghi chú",
+      "item_status": "DEMO",
+      "item_image": " ảnh sp",
+      "item_createdate": "",
+      "item_changedate": "",
+      "man_uuid": "4e4dd653-c6e8-4fca-b430-63d436ead8b7"
+    }
+  },
+  {
+    "time": "Tue Sep 12 2023 16:58:37 GMT+0700 (Indochina Time)",
+    "user_uuid": "0fb2c987-dc79-488b-a7ff-9c6556d85f91",
+    "action": "updateItem",
+    "info": {
+      "oldItem": {
+        "id": 1,
+        "item_uuid": "3cd66d0b-f2a3-48fb-b74c-42f009b85bfc",
+        "item_key": "DM04DM",
+        "item_name": "Sản phẩm tét",
+        "item_namesub": "tên trên hoá đơn",
+        "item_part": "PARTM",
+        "item_serial": "DEMO",
+        "item_detail": "thông tin sản phẩm",
+        "cat_uuid": "9652af7b-862d-4a06-ac8a-ecd034b532bf",
+        "whs_uuid": "NULLWHS",
+        "item_amount": "-1",
+        "item_price": "10000",
+        "item_note": "không có ghi chú",
+        "item_status": "DEMO",
+        "item_image": " ảnh sp",
+        "item_createdate": "",
+        "item_changedate": "",
+        "man_uuid": "4e4dd653-c6e8-4fca-b430-63d436ead8b7"
+      },
+      "updateItem": {
+        "item_name": "Sản phẩm số 01"
+      }
+    }
+  }
+]
