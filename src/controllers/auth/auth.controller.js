@@ -24,29 +24,29 @@ const addUser = async (req = request, res = response) => {
         //kiểm soát dữ liệu đầu vào xem người dùng có để trống hay không//
         if (!user_data.user_name) {
             return res.status(200).json({
-                err: true,
-                msg: "Tên người dùng đang để trống",
+                success: false,
+                message: "Tên người dùng đang để trống",
                 data: "empty_username"
             })
         }
         if (!user_data.user_password) {
             return res.status(200).json({
-                err: true,
-                msg: "Mật khẩu người dùng đang để trống",
+                success: false,
+                message: "Mật khẩu người dùng đang để trống",
                 data: "empty_userpassword"
             })
         }
         if (!user_data.user_fullname) {
             return res.status(200).json({
-                err: true,
-                msg: "Vui lòng nhập đầy đủ họ và tên",
+                success: false,
+                message: "Vui lòng nhập đầy đủ họ và tên",
                 data: "empty_userfullname"
             })
         }
         if (!user_data.user_email) {
             return res.status(200).json({
-                err: true,
-                msg: "Email người dùng đang để trống!",
+                success: false,
+                message: "Email người dùng đang để trống!",
                 data: "empty_useremail"
             })
         }
@@ -54,8 +54,8 @@ const addUser = async (req = request, res = response) => {
         //không cho nhập ký tự đặc biệt vào tên người dùng
         if (!user_data.user_name.match(/^[A-Za-z0-9]+$/)) {
             return res.status(200).json({
-                err: true,
-                msg: "Chỉ được dùng chữ cái A-Z, a-z,số 0-9 vui lòng kiếm tra lại.",
+                success: false,
+                message: "Chỉ được dùng chữ cái A-Z, a-z,số 0-9 vui lòng kiếm tra lại.",
                 data: "error_username"
             })
         }
@@ -63,8 +63,8 @@ const addUser = async (req = request, res = response) => {
         if (!(user_data.user_fullname.replace(/\s/g, "")).match(variables.reunicode)) {
             return res.status(200).json(
                 {
-                    err: true,
-                    msg: "Vui lòng nhập đúng, bạn đang nhập sai, Họ và tên của bạn đang không đúng định dạng",
+                    success: false,
+                    message: "Vui lòng nhập đúng, bạn đang nhập sai, Họ và tên của bạn đang không đúng định dạng",
                     data: "error_fullname"
                 })
         }
@@ -72,8 +72,8 @@ const addUser = async (req = request, res = response) => {
         if (user_data.user_fullname.split('  ').length >= 2) {
             return res.status(200).json(
                 {
-                    err: true,
-                    msg: "Vui lòng không nhập hai khoảng trắng, vui lòng kiểm tra lại",
+                    success: false,
+                    message: "Vui lòng không nhập hai khoảng trắng, vui lòng kiểm tra lại",
                     data: "error_fullname_space"
                 })
         }
@@ -81,8 +81,8 @@ const addUser = async (req = request, res = response) => {
         // kiểm xem mật khẩu có nhập linh tinh không
         if (!user_data.user_password.match(variables.passwordformat)) {
             return res.status(200).json({
-                err: true,
-                msg: "Mật khẩu không đúng định dạng vui lòng nhập lại. 8 đến 15 ký tự chứa ít nhất một chữ thường, một chữ in hoa, một chữ số và một ký tự đặc biệt " + user_data.user_password ,
+                success: false,
+                message: "Mật khẩu không đúng định dạng vui lòng nhập lại. 8 đến 15 ký tự chứa ít nhất một chữ thường, một chữ in hoa, một chữ số và một ký tự đặc biệt " + user_data.user_password ,
                 data: "error_password"
             })
         }
@@ -90,8 +90,8 @@ const addUser = async (req = request, res = response) => {
         
         if (!(variables.mailformat.test(user_data.user_email))) {
             return res.status(200).json({
-                err: true,
-                msg: "Vui lòng nhập đúng định dạng Email",
+                success: false,
+                message: "Vui lòng nhập đúng định dạng Email",
                 data: "error_email"
             })
         }
@@ -102,8 +102,8 @@ const addUser = async (req = request, res = response) => {
         var getUserInfo  = await userModel.getUserInfo('user_name', user_data.user_name)
         if (getUserInfo.data[0]) {
             return res.status(200).json({
-                err: true,
-                msg: "Tên người dùng đã tồn tại trong cơ sở dữ liệu",
+                success: false,
+                message: "Tên người dùng đã tồn tại trong cơ sở dữ liệu",
                 data: "arr_user_name"
             })
         }
@@ -111,8 +111,8 @@ const addUser = async (req = request, res = response) => {
         var getUserInfo  = await userModel.getUserInfo('user_email', user_data.user_email)
         if (getUserInfo.data[0]) {
             return res.status(200).json({
-                err: true,
-                msg: "Email người dùng đã tồn tại trong cơ sở dữ liệu",
+                success: false,
+                message: "Email người dùng đã tồn tại trong cơ sở dữ liệu",
                 data: "arr_user_email"
             })
         }
@@ -124,20 +124,20 @@ const addUser = async (req = request, res = response) => {
         var getUserInfo_check  = await userModel.getUserInfo('user_name', user_data.user_name)
         if (!getUserInfo_check.data[0]) {
             return res.status(200).json({
-                err: true,
-                msg: "Chưa thấy thông tin trong cơ sở dữ liệu",
-                data: "err_null"
+                success: false,
+                message: "Chưa thấy thông tin trong cơ sở dữ liệu",
+                data: "success_null"
             })
         }
         //trả kết quả thành công
         return res.status(200).json({
-            err: false,
-            msg: "Thêm tài khoản mới thành công",
+            success: false,
+            message: "Thêm tài khoản mới thành công",
             data: user_data,
         })
     } catch (error) {
         res.status(500).json({
-            err: true,
+            success: false,
             messenger: 'Lỗi hàm addUser',
             data: { error }
         })
@@ -159,23 +159,23 @@ const loginUser = async (req = request, res = response) => {
 		//Kiểm tra lại nội dung Client gửi lên
 		if (!user_data.user_password) {
             return res.status(200).json({
-                err: true,
-                msg: "Mật khẩu người dùng đang để trống",
+                success: false,
+                message: "Mật khẩu người dùng đang để trống",
                 data: "emty_userpassword"
             })
         }
         if (!user_data.user_email) {
             return res.status(200).json({
-                err: true,
-                msg: "Email người dùng đang để trống",
+                success: false,
+                message: "Email người dùng đang để trống",
                 data: "empty_useremail"
             })
         }
         // kiểm xem mật khẩu có nhập linh tinh không
         if (!user_data.user_password.match(variables.passwordformat)) {
             return res.status(200).json({
-                err: true,
-                msg: "Mật khẩu không đúng định dạng vui lòng nhập lại. 8 đến 15 ký tự chứa ít nhất một chữ thường, một chữ in hoa, một chữ số và một ký tự đặc biệt",
+                success: false,
+                message: "Mật khẩu không đúng định dạng vui lòng nhập lại. 8 đến 15 ký tự chứa ít nhất một chữ thường, một chữ in hoa, một chữ số và một ký tự đặc biệt",
                 data: "error_password"
             })
         }
@@ -183,8 +183,8 @@ const loginUser = async (req = request, res = response) => {
         
         if (!(variables.mailformat.test(user_data.user_email))) {
             return res.status(200).json({
-                err: true,
-                msg: "Vui lòng nhập đúng định dạng Email",
+                success: false,
+                message: "Vui lòng nhập đúng định dạng Email",
                 data: "error_email"
             })
         }
@@ -194,8 +194,8 @@ const loginUser = async (req = request, res = response) => {
         const userInfo = getUserInfo.data[0]
 		if (!userInfo) {
             return res.status(200).json({
-                err: true,
-                msg: "Email không tồn tại trong cơ sở dữ liệu",
+                success: false,
+                message: "Email không tồn tại trong cơ sở dữ liệu",
                 data: "error_email_empty"
             })
 		}
@@ -203,8 +203,8 @@ const loginUser = async (req = request, res = response) => {
 		const isPasswordValid = bcrypt.compareSync(user_data.user_password, userInfo.user_password);
 		if (!isPasswordValid) {
 			return res.status(200).json({
-                err: true,
-                msg: "Mật khẩu không khớp",
+                success: false,
+                message: "Mật khẩu không khớp",
                 data: "error_password_notmacth"
             })
 		}
@@ -229,8 +229,8 @@ const loginUser = async (req = request, res = response) => {
         
 		if (!accessToken) {
 			return res.status(200).json({
-                err: true,
-                msg: "Token lỗi",
+                success: false,
+                message: "Token lỗi",
                 data: "error_token"
             })
 		}
@@ -249,27 +249,27 @@ const loginUser = async (req = request, res = response) => {
         const updateUser = await userModel.updateUser('user_loginid', login_id, 'user_email', userInfo.user_email)
         if (updateUser.error != true) {
             return res.status(200).json({
-                err: false,
-                msg: 'Đăng nhập thành công.',
+                success: true,
+                message: 'Đăng nhập thành công.',
                 accessToken,
                 userInfo,
                 user_loginid: login_id
             });
         } else {
-            await Logs.writeErrLog('03lou',error)
+            await Logs.writesuccessLog('03lou',error)
         return res.status(500).json({
-                err: false,
-                msg: 'Có lỗi trong quá trình thực thi',
-                data: "err_model"
+                success: false,
+                message: 'Có lỗi trong quá trình thực thi',
+                data: "success_model"
             });
         }
 		
 	}
 	catch (e) {
-		await Logs.writeErrLog('03lou',error)
+		await Logs.writesuccessLog('03lou',error)
         return res.status(500).json({
-            err: true,
-            msg: "Máy chủ lỗi hàm loginAuth",
+            success: false,
+            message: "Máy chủ lỗi hàm loginAuth",
             data: e
         })
         
@@ -283,7 +283,7 @@ const logoutUser = async (req = request, res = response) => {
         //lấy key trong header
         const accessTokenFromHeader = req.headers.x_authorization;
         const isAuth = await authMid.isAuth(accessTokenFromHeader);
-        if (isAuth.err === true) {
+        if (isAuth.success === true) {
             return res.status(200).json(isAuth)
         }
         //thông tin người dùng
@@ -291,24 +291,24 @@ const logoutUser = async (req = request, res = response) => {
         //Xoá cái phiên đăng nhập đi
         const newLoginID = Create.uuid();
         const updateLoginID =  await userModel.updateUser('user_loginid',newLoginID,'user_key',user_uuid)
-        if (updateLoginID.err) {
+        if (updateLoginID.success) {
             return res.status(200).json({
-                err: true,
-                msg: "Máy chủ lỗi hàm logoutAuth",
-                data: 'err_logout'
+                success: false,
+                message: "Máy chủ lỗi hàm logoutAuth",
+                data: 'success_logout'
             })
         }
         return res.status(200).json({
-            err: false,
-            msg: 'Đăng xuất thành công.',
+            success: false,
+            message: 'Đăng xuất thành công.',
             data: "logout_ok"
         });
 
     } catch (error) {
-        await Logs.writeErrLog('03lou',error)
+        await Logs.writesuccessLog('03lou',error)
         return res.status(500).json({
-            err: true,
-            msg: "Máy chủ lỗi hàm logoutAuth",
+            success: false,
+            message: "Máy chủ lỗi hàm logoutAuth",
             data: e
         })
     }
